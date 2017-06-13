@@ -1,5 +1,6 @@
 (tool-bar-mode 0)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(add-to-list 'load-path "~/.emacs.d/plugins")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -18,4 +19,5 @@
 
 (load-theme ' zenburn t)
 
-
+(require 'sr-speedbar)
+(setq sr-speedbar-right-side nil)
